@@ -1,6 +1,7 @@
-
 @import 'config';
 @import 'menu';
+@import 'mobile';
+
 
 
 *{
@@ -24,9 +25,9 @@ h1,h2,h3{
     font-weight: 400;
 
     //bcz h1 has it's own class named lg-heading
-    &.lg-heading{
-        font-size: 6rem; /*1rem = 16px by default*/
-    }
+    // &.lg-heading{
+    //      /*1rem = 16px by default*/
+    // }
 
     &.sm-heading{
         margin-bottom: 2rem;
