@@ -13,7 +13,7 @@ body{
     color:#fff;
     height: 100%;
     margin: 0;
-    font-family: fantasy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -29,7 +29,6 @@ h1,h2,h3{
     }
 
     &.sm-heading{
-        letter-spacing: 0.08rem;
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         // background: rgba(lighten($primary-color,2),0.5);
