@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #323232;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #3f3f3f;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -75,7 +75,7 @@
     padding: 1rem 0;
     font-weight: 300;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -93,54 +93,11 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (min-width: 1171px) {
-  main .lg-heading {
-    font-size: 6rem; } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  main .lg-heading {
-    font-size: 6rem; } }
-
-@media screen and (max-width: 893px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-      font-size: 4rem; }
-  ul.menu-nav, div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show, div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0); }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 100px;
-      height: 100px; } }
-
-@media screen and (max-width: 500px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-      font-size: 3rem; }
-    main h1 {
-      margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #3f3f3f;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -157,7 +114,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.5);
+      background: rgba(63, 63, 63, 0.5);
       z-index: -1; }
 
 h1, h2, h3 {
@@ -181,7 +138,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -193,3 +150,81 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+  main#about {
+    padding: 3rem; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3'; }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #eece1a; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #4c4c4c;
+    padding: 0.5rem;
+    border-bottom: 5px solid #eece1a; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #262626;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  main .lg-heading {
+    font-size: 6rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main .lg-heading {
+    font-size: 6rem; } }
+
+@media screen and (max-width: 893px) {
+  main {
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 4rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 100px;
+      height: 100px; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3'; } }
+
+@media screen and (max-width: 500px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 3rem; }
+    main h1 {
+      margin-top: 10vh; } }
