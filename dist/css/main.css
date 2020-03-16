@@ -120,7 +120,10 @@ body {
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    animation-duration: 1.5s; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    animation-duration: 1.5s;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem; }
 
@@ -170,11 +173,14 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    animation-duration: 1.5s; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    animation-duration: 1.5s; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job3;
+    animation-duration: 1.5s; }
   .about-info .job {
     background: #4c4c4c;
     padding: 0.5rem;
@@ -208,6 +214,30 @@ main {
 
 .btn-light {
   background: #bfbfbf; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 #main-footer {
   text-align: center;
@@ -266,4 +296,7 @@ main {
     main h1 {
       margin-top: 10vh; }
   .projects {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .boxes div {
+    width: 400px;
+    font-size: 1rem; } }

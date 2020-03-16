@@ -7,6 +7,7 @@
     <title>Know Me</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item current"><a href="about.html" class="nav-link">About Me</a></li>
                 <li class="nav-item"><a href="work.html" class="nav-link">My Work</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
@@ -31,32 +32,32 @@
     </header>
 
     <main id="about">
-        <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-        <h2 class="sm-heading">Let me tell you a few things...</h2>
+        <h1 class="lg-heading animated fadeInLeft">About <span class="text-secondary">Me</span></h1>
+        <h2 class="sm-heading animated fadeInRight">Let me tell you a few things...</h2>
 
         <div class="about-info">
             <img src="image/portrait.jpg" alt="AC" class="bio-image">
-            <div class="bio">
-                <h3 class="text-secondary">BIO</h3>
+            <div class="bio wow animated fadeInRight">
+                <h3 class="text-secondary ">BIO</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quam provident laborum
                     corporis sunt, minima molestiae deserunt repellat laboriosam illo velit hic quis necessitatibus ex
                     fugit quod dolor molestias.</p>
             </div>
-            <div class="job job-1">
+            <div class="job job-1 wow animated zoomInUp ">
                 <h3>123 Workshop</h3>
                 <h6>Full Stack Developer</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, doloremque molestias cum laboriosam
                     libero, eos dicta alias ab nesciunt inventore quaerat delectus excepturi autem necessitatibus, saepe
                     quia magnam velit quidem. Ab a suscipit sed soluta nisi nemo? Nulla, eum sint.</p>
             </div>
-            <div class="job job-2">
+            <div class="job job-2 wow animated zoomInUp">
                 <h3>xyz Designers Ltd.</h3>
                 <h6>Front-End Developer</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, doloremque molestias cum laboriosam
                     libero, eos dicta alias ab nesciunt inventore quaerat delectus excepturi autem necessitatibus, saepe
                     quia magnam velit quidem. Ab a suscipit sed soluta nisi nemo? Nulla, eum sint.</p>
             </div>
-            <div class="job job-3">
+            <div class="job job-3 wow animated zoomInUp">
                 <h3>Web-pirates</h3>
                 <h6>Front-End and UI designer</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, doloremque molestias cum laboriosam
@@ -71,6 +72,12 @@
         Copyright &copy; 2020
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
