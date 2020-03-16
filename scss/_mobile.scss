@@ -5,6 +5,9 @@
             font-size: 6rem;
         }
     }
+    .projects{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
 // Desktop and Laptops
@@ -13,6 +16,9 @@
         .lg-heading{
             font-size: 6rem;
         }
+    }
+    .projects{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
@@ -60,6 +66,9 @@
         'job2'
         'job3';
     }
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 // Smartphones
@@ -77,5 +86,8 @@
             margin-top: 10vh;
             
         }
+    }
+    .projects{
+        grid-template-columns: repeat(1,1fr);
     }
 }

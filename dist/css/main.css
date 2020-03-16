@@ -152,6 +152,8 @@ main {
       margin-top: 20vh; }
   main#about {
     padding: 3rem; }
+  main#work {
+    padding: 3rem; }
 
 .about-info {
   display: grid;
@@ -178,6 +180,35 @@ main {
     padding: 0.5rem;
     border-bottom: 5px solid #eece1a; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem; }
+  .projects img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #fff; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #bfbfbf; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -187,11 +218,15 @@ main {
 
 @media screen and (min-width: 1171px) {
   main .lg-heading {
-    font-size: 6rem; } }
+    font-size: 6rem; }
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main .lg-heading {
-    font-size: 6rem; } }
+    font-size: 6rem; }
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 893px) {
   main {
@@ -216,7 +251,9 @@ main {
       width: 100px;
       height: 100px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3'; } }
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3'; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -227,4 +264,6 @@ main {
       margin-bottom: 1rem;
       font-size: 3rem; }
     main h1 {
-      margin-top: 10vh; } }
+      margin-top: 10vh; }
+  .projects {
+    grid-template-columns: repeat(1, 1fr); } }
