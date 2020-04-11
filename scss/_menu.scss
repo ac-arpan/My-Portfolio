@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: set-text-color($primary-color);
+        background: $secondary-color;
         @include easeOut;
     }
 
@@ -119,10 +119,10 @@
     .nav-link{
         display: inline-block;
         position: relative;
-        font-size: 30px;
+        font-size: 35px;
         text-transform: uppercase;
         padding: 1rem 0;
-        font-weight: 300;
+        font-weight: 100;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: set-text-color($primary-color);
         text-decoration: none;
