@@ -20,6 +20,18 @@
     .projects{
         grid-template-columns: repeat(3,1fr);
     }
+    #skills{
+        .skill-info{
+            padding: 0rem;
+
+            .skill-name{
+                font-size: 1rem;
+            }
+            .skill-bar{
+                width: 800px;
+            }
+        }
+    }
 }
 
 //Tablets & Small Laptops
@@ -69,7 +81,27 @@
     .projects{
         grid-template-columns: repeat(2,1fr);
     }
+    #skills{
+        .skill-info{
+            padding: 0rem;
+
+            .skill-header{
+                text-align: left;
+                font-size: 2rem;
+            }
+            .img{
+                width: 70px;
+            }
+            .skill-name{
+                font-size: 1rem;
+            }
+            .skill-bar{
+                width: 600px;
+            }
+        }
+    }
 }
+
 
 // Smartphones
 @include mediaSm{
@@ -95,6 +127,46 @@
         div{
             width: 400px;
             font-size: 1rem;
+        }
+    }
+    #skills{
+        .skill-info{
+            padding: 0rem;
+
+            .skill-header{
+                text-align: left;
+                font-size: 1.5rem;
+            }
+
+            .divider{
+                margin-top: 0.4rem;
+                width:60px;
+                height: 2px;
+            }
+
+            .skill-row{
+                flex-wrap: wrap;
+                margin-bottom: 1rem;;
+            }
+            .img{
+                width: 50px;
+            }
+            .skill-name{
+                font-size: 1.5rem;
+                width: 72%;
+                text-align:left;
+                margin-right: 0;
+            }
+            .skill-bar{
+                width: 300px;
+
+                .progress{
+                    margin-right: 0.5rem;
+                }
+                .perc{
+                    font-size: 9px;
+                }
+            }
         }
     }
 }

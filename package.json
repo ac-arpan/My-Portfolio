@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "My Portfolio website",
   "main": "index.js",
+  "homepage": "https://ac-arpan.github.io/My-Portfolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":"gh-pages -d dist",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Arpan",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
